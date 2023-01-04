@@ -1,0 +1,38 @@
+STL standard template library
+
+int arr[5];
+arr[0] = 5;
+arr[1] = 4;
+arr[2] = 4;
+2 3 4 5 6 
+2 3 5 6
+Array containe fixed size.
+delete
+
+#include<vector>
+
+#include<bits/stdc++.h>
+"bits/stdc++.h" == this containe each & every lib 
+vector == array
+
+
+/*
+C - 1972
+binary -- 01
+high level prog.
+
+class, object
+secure
+c++
+java
+python
+
+comptetive programming
+100 -> 50%
+*/
+
+#include<bits/stdc++.h>
+// #include<iostream>
+// #include<math.h>
+// #include<vector>
+// #include<string>
