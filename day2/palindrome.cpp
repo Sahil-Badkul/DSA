@@ -46,7 +46,6 @@ bool isPalindrome(int n){
      3      3*10 + 3 = 33   2
      2      33*10+2 = 332   0
     
-
     1. number = 0
     2. number ko 10 se multiple +  me reminder add karna suru kia 
     3. check kiya jo number bana hai vo input ke equal 

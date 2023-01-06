@@ -7,29 +7,6 @@ arr = 3 45 6 7 8
 
 o/p
 45
-insertion
-
-*
-! - not
-it is a bitwise operator
-& 
-1 1 -- 1
-1 0 -- 0
-0 1 -- 0
-0 0 -- 0
-| --> 
-1 1 -- 1
-1 0 -- 1
-0 1 -- 1
-0 0 -- 0
-! --> it reverse the result
-1 -- 0
-0 -- 1
-
-if(pass != "989"){
-    cout<<"wrong password";
-}
-
 */
 
 #include<bits/stdc++.h>
