@@ -1,0 +1,67 @@
+#Move all zero to end
+condition : orders must be remain same for other element
+
+-- Naive solution : Travese array from left to right. as soon as we encounter zero, swap that with non zero element on right side.
+TC : O(n^2)
+
+-- Efficient solution : Maintain the count of non zero element and swap current element with last not zero element.
+TC : O(n)
+
+#Left Rotate an Array by one
+ip - 1 2 3 4 5 
+op - 2 3 4 5 1
+
+-- Steps
+1. store first element in variable.
+2. move all element towards left.
+3. put first element that we store in variable into last index.
+
+TC : O(n)
+SC : O(1)
+
+#Left rotate an array by d
+ip - 1 2 3 4 5, d = 2
+op - 3 4 5 1 2 
+
+we may assume d <= size of array
+
+-- Naive solution : Can call leftRotateOne  d time.
+TC : O(nd)
+SC : O(1)
+
+-- Better : Similar to above, copy first d element into temp. array and perform same as above.
+Siftting each element d element before.
+TC : O(n+d)
+SC : O(d)
+
+-- Efficient : Reversal algorithm.
+Reversal array b/w low and high.
+reverse(arr, 0, d-1)
+reverse(arr, d, n-1)
+reverse(arr, 0, n-1)
+
+TC : (d + n-d + n) = (2n)
+SC : O(1)
+
+#Leaders in an array
+Leaders is an element if all element are smaller than it in right side.
+
+arr[] = 7, 10, 4, 3, 6, 5, 2
+op : 10, 6, 5, 2
+
+arr[] = 10, 20, 30
+op : 30
+
+arr[] = 30, 20, 10
+op : 30, 20, 10
+
+-- Naive solution : for every element traversal on right side and check given condition 
+TC : O(n^2)
+SC : O(1)
+
+-- Efficient solution : This print solution form right to left. 
+Traverse from right side. Last element is always leaders.
+Start from last 2nd element and check if current element is greater than current leader then that is also a leader, so update current element.
+
+TC : O(n)
+Sc : O(1)

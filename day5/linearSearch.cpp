@@ -46,6 +46,13 @@ bool linear_search(vector<int> num, int key){
     }
     return false;
 }
+
+void print(vector<int> &arr){
+    for(int i = 0; i < arr.size(); i++){
+        printf("%d", arr[i]);
+    }
+}
+
 int main()
 {
     int n, key; 
